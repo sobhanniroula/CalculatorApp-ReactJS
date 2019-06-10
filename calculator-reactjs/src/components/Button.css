@@ -1,11 +1,90 @@
-.button {
+button {
     display: flex;
-    height: 4rem;
-    flex: 1;
+    height: 7rem;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    background-color: #e5e5e5;
+    background: #F5F5F5;
     color: #888;
-    outline: 1px solid #bbb;
+    outline: none;
+    border: none;
 }
+
+button:hover {
+    background: #E8E8E8;
+}
+
+button:active {
+    background: #fff;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+  }
+
+#plus-key {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    height: 100%;
+  }
+
+  #equals-key {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    height: 100%;
+    background: #428bca;
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  #equals-key:hover {
+    background: #0d739b;
+  }
+
+  #equals-key:active {
+    background: #fff;
+    color: #888;
+}
+
+  .operator {
+    color: #f66;
+    background: #E8E8E8;
+    font-size: 2rem;
+  }
+
+  .operator:hover {
+    background: #F5F5F5;
+}
+
+.operator:active {
+    background: #fff;
+}
+
+.clears {
+    background: #f66;
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .clears:hover{
+    background: #f9534f;
+  }
+
+  .clears:active {
+    background: #fff;
+    color: #888;
+}
+
+  #zero-key:hover {
+    background: #E8E8E8;
+  }
+
+  #zero-key:active {
+      background: #fff;
+  }
